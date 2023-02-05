@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <script src="https://kit.fontawesome.com/2a38ce65c9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    
+    <div class="outer-container">
+    <section class="nav-section">
+        <nav class="navbar">
+            <div class="icon">
+                <img class="logo" src= ".\img\transparent-music-icon-music-player-icon-essential-set-icon-5d6a07d4a73515.6802128515672299086849.png"/>
+                <div>
+                    <h4 class="logo-title">Rhythm</h4>
+                </div>
+            </div>
+            <div class="pages">
+                <ul class="nav-items">
+                    <li class="homebtn swap" onclick="showsongs()">Home</li>
+                    <li class="playlistbtn swap" onclick="showplaylist()">Playlist</li>
+                </ul>
+            </div>
+            <form class="searchbar">
+                <input type="text" class="search-bar" name="search"  placeholder="search songs here"/>
+            </form>
+        </nav>
+    </section>
+
+    <section class="display">
+        <div class="main-display">
+        <div class= 'details img'>
+            <div class="song-title"></div>
+            <div class="track-img"></div>
+        </div>
+        <div class="playlist-details img">
+
+        </div>
+        </div>
+    </section>
+
+    <!-- to set the seek slider and its timer -->
+    <section class="slider-container">
+        <div class="current-time">00:00</div>
+        <input type="range" min="0" max="100" value="0" class="seek-slider">
+        <div class="total-time">00:00</div>
+    </section>
+       
+    <!-- set the controls for player -->
+    <section class="controls">
+        <div class="current-track">
+            <div class="track-name">track Name</div>
+            <div class="track-artist">track artist</div>
+        </div>
+        <div class="audio-controls">
+            <div class="prev buttonstyle">
+                <!-- <i class="fa-solid fa-chevron-left"></i> -->
+                <i class="fa fa-step-backward fa-2x"></i>
+            </div>
+            <div class="play-pause buttonstyle1">
+                <i class="fa fa-play-circle fa-3x"></i>
+            </div>
+            <div class="next buttonstyle">
+                <!-- <i class="fa-solid fa-chevron-right"></i> -->
+                <i class="fa fa-step-forward fa-2x"></i>
+            </div>
+        </div>
+        <div class="volume-controls">
+            <i class="fa fa-volume-down"></i>
+            <input type="range" min="1" max="100" value="99" class="volume-slider">
+            <i class="fa fa-volume-up"></i>
+        </div>
+    </section>
+
+    <!-- <div class="playlist"></div>
+    </div> -->
+    <script src="index.js"></script>
+</body>
+</html>
